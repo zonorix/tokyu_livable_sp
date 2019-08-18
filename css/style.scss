@@ -1,0 +1,135 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+//header----------------------------------------------------------
+
+.top-head {
+    height: 55px;
+    padding: 0 32px;
+    background-color: #00aeef;
+    display: flex;
+    align-items: center;
+    .top-logo img {
+        width: 158px;
+        display: block;
+    } 
+}
+.top-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+}
+.top-foot-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+// form-top----------------------------------------------------------
+
+.step-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+form > .form-item:nth-child(2) {
+    margin: 0 18px;
+    border-radius: 4px;
+}
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    padding: 3px;
+    .left {
+        padding-left: 2px;
+        .item-title {
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-align: center;
+            width: 91px;
+        }
+    }
+    
+    .required-img img {
+        display: block;
+        width: 35px;
+        margin: auto;
+    }
+    .center {
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        select {
+            background: #fff url(../images/index_ic05.png) no-repeat 94% 50%;
+            background-size: 11px;
+            padding: 8px;
+            width: 100%;
+            border: 1px solid #bbb;
+            border-radius: 4px;   
+            font-size: 0.9rem;         
+        }   
+    }
+    .right img {
+        display: block;
+        width: 30px;
+        margin: 0 4px 0 16px;
+        }
+        
+}
+.step-2-wrap {
+    margin: 0 18px;
+    padding: 4px 0;
+    background-color: #eee;
+    border-radius: 4px;
+}
+.button-wrap {
+    margin: 0 18px;
+}
+.submit-button {
+    background-color: #bbb;
+    margin-top: 10px;
+    height: 60px;
+    width: 100%; 
+    display: block;
+    border-bottom: 3px solid #888;
+    .inner-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        max-width: 100%;
+        margin: auto;
+        img {
+            width: 20px;
+            display: block;
+            margin-right: 10px;
+        }
+        p {
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+    }
+
+}

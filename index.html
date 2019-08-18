@@ -4,11 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>あなたの不動産、今いくら？｜東急リバブル</title>
 </head>
 <body>
-    <header></header>
-    <section class="form-top"></section>
+    <header>
+        <div class="top-head">
+            <h1 class="top-logo"><img src="images/livable_logo_white.png" alt="LIVABLE 東急リバブル"></h1>
+        </div>
+        <h3 class="top-img"><img src="images/index_ti01.jpg" alt="入力は簡単60秒！不動産...売る？売らない？今、いくらなのか聞いてから考えよう！"></h3>
+        <h3 class="top-foot-img"><img src="images/index_ti02.png" alt="査定無料！あなたの不動産はいくら？"></h3>
+    </header>
+    <section class="form-top">
+        <form action="">
+            <p class="step-img"><img src="images/index_tx01.png" alt="STEP1"></p>
+            <div class="form-item">
+                <div class="col left">
+                    <p class="item-title">物件種別</p>
+                    <p class="required-img"><img src="images/index_ic01.png" alt="必須"></p>
+                </div>
+                <div class="col center">
+                    <select name="property-type">
+                        <option value="">選択してください</option>
+                        <option value="">マンション</option>
+                        <option value="">一戸建て</option>
+                        <option value="">土地</option>
+                        <option value="">その他</option>
+                    </select>
+                </div>
+                <div class="col right">
+                    <img src="images/index_ic04.png" alt="OK">
+                </div>
+            </div>
+            <p class="step-img"><img src="images/index_tx02.png" alt="STEP2"></p>
+            <div class="step-2-wrap">
+                <div class="form-item">
+                    <div class="col left">
+                        <p class="item-title">都道府県</p>
+                        <p class="required-img"><img src="images/index_ic01.png" alt="必須"></p>
+                    </div>
+                    <div class="col center">
+                        <select name="prefectures">
+                            <option value="">選択してください</option>
+                            <optgroup label="北海道・東北地方">
+                                <option value="">北海道</option>
+                                <option value="">青森</option>
+                                <option value="">岩手</option>
+                                <option value="">宮城</option>
+                                <option value="">秋田</option>
+                                <option value="">山形</option>
+                                <option value="">福島</option>
+                            </optgroup>
+                            <optgroup label="関東地方">
+                                <option value="">東京</option>
+                                <option value="">神奈川</option>
+                                <option value="">埼玉</option>
+                                <option value="">千葉</option>
+                                <option value="">茨城</option>
+                                <option value="">栃木</option>
+                                <option value="">群馬</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="col right">
+                        <img src="images/index_ic04.png" alt="OK">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="col left">
+                        <p class="item-title">市区町村</p>
+                        <p class="required-img"><img src="images/index_ic01.png" alt="必須"></p>
+                    </div>
+                    <div class="col center">
+                        <select name="city">
+                            <option value="">選択してください</option>
+                        </select>
+                    </div>
+                    <div class="col right">
+                        <img src="images/index_ic04.png" alt="OK">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="col left">
+                        <p class="item-title">町名</p>
+                        <p class="required-img"><img src="images/index_ic01.png" alt="必須"></p>
+                    </div>
+                    <div class="col center">
+                        <select name="city">
+                            <option value="">選択してください</option>
+                        </select>
+                    </div>
+                    <div class="col right">
+                        <img src="images/index_ic04.png" alt="OK">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="col left">
+                        <p class="item-title">丁目</p>
+                        <p class="required-img"><img src="images/index_ic01.png" alt="必須"></p>
+                    </div>
+                    <div class="col center">
+                        <select name="city">
+                            <option value="">選択してください</option>
+                        </select>
+                    </div>
+                    <div class="col right">
+                        <img src="images/index_ic04.png" alt="OK">
+                    </div>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <button type="button" class="submit-button">
+                    <div class="inner-wrap">
+                        <img src="images/index_ic06.png" alt="">
+                        <p>メールで無料査定に申込む</p>
+                    </div>
+                </button>
+                <button type="button" class="submit-button">
+                    <div class="inner-wrap">
+                        <img src="images/index_ic07.png" alt="">
+                        <p>電話で無料査定に申込む</p>
+                    </div>
+                </button>
+            </div>
+        </form>
+    </section>
     <section class="intro"></section>
     <section class="reason">
         <div class="reason-1"></div>
@@ -19,6 +140,6 @@
     </section>
     <section class="last-reason"></section>
     <section class="form-bottom"></section>
-    <footer>aa</footer>
+    <footer></footer>
 </body>
 </html>
