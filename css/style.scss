@@ -15,40 +15,44 @@ a {
     color: inherit;
 }
 
+$deepBlue: #00a0e9;
+$lightBlue: #edfaff;
+
+@mixin imgDef {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 //header----------------------------------------------------------
 
-.top-head {
-    height: 55px;
-    padding: 0 32px;
-    background-color: #00aeef;
-    display: flex;
-    align-items: center;
-    .top-logo img {
-        width: 158px;
-        display: block;
-    } 
+header {
+    .top-head {
+        height: 55px;
+        padding: 0 32px;
+        background-color: #00aeef;
+        display: flex;
+        align-items: center;
+        .top-logo img {
+            width: 158px;
+            display: block;
+        } 
+    }
+    .top-img img {
+        @include imgDef;
+        
+    }
+    .top-foot-img img {
+        @include imgDef;
+    }
 }
-.top-img img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    
-}
-.top-foot-img img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+
 
 // form-top----------------------------------------------------------
 
 .step-img img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
+    @include imgDef;
 }
 form > .form-item:nth-child(2) {
     margin: 0 18px;
@@ -123,7 +127,7 @@ form > .form-item:nth-child(2) {
         img {
             width: 20px;
             display: block;
-            margin-right: 10px;
+            margin-right: 14px;
         }
         p {
             color: #fff;
@@ -133,3 +137,246 @@ form > .form-item:nth-child(2) {
     }
 
 }
+
+
+// intro----------------------------------------
+
+.intro h3 {
+    font-size: 1.12rem;
+    text-align: center;
+    margin-top: 24px;
+    line-height: 1.9rem;
+    font-weight: bold;
+    letter-spacing: 0.05px;
+    .large {
+        font-size: 1.55rem;
+        .red {
+            color: #c00;
+        }
+    }
+}
+.intro-img {
+    @include imgDef;
+    margin-top: 20px;
+}
+.intro p:last-child {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 22.1%;
+    background: url(../images/index_bg01.png) no-repeat 0 100%;
+    background-size: contain;
+}
+
+// reason---------------------------------------
+
+.reason-title {
+    border-bottom: 1px solid $deepBlue;
+    padding: 40px 0 20px;
+    margin: 0 23px;
+    display: flex;
+    .num {
+        color: $deepBlue;
+        font-size: 3.5rem;
+        font-weight: normal;
+        display: block;
+        line-height: 1;
+        padding-left: 7px;
+    }
+    .title-text {
+        font-size: 0.9rem;
+        padding-left: 20px;
+        em {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.reason-top {
+    font-size: 1.25rem;
+    color: #fff;
+    text-align: center;
+    background-color: $deepBlue;
+    padding: 0.9em;
+}
+.reason-1 {
+    background-color: $lightBlue;
+    .first-img {
+        @include imgDef;
+    }
+    .lead {
+        margin: 0 30px;
+        font-size: 0.88rem;
+        margin-top: 4px;
+    }
+    .second-img {
+        @include imgDef;
+    }
+}
+// reaaon h4 mixin--------------------------
+
+@mixin h4 {
+    font-size: 1.13rem;
+    color: $deepBlue;
+    margin: 28px 30px 0;
+}
+@mixin lead {
+    font-size: .88rem;
+    margin: 10px 30px 0;
+}
+
+// --------------------------------------------
+
+.reason-2 {
+    h4 {
+        @include h4;
+    }
+    .lead {
+        @include lead;
+    }
+    img {
+        @include imgDef;
+    }
+}
+.reason-3 {
+    background-color: $lightBlue;
+    h4 {
+        @include h4;
+    }
+    .lead {
+        @include lead;
+    }
+    img {
+        @include imgDef;
+    }
+}
+.reason-4 {
+    margin-bottom: 50px;
+    h4 {
+        @include h4;
+    }
+    .lead {
+        @include lead;
+    }
+    img {
+        @include imgDef;
+    }
+    .comment {
+        font-size: 0.65rem;
+        margin: 0 30px;
+        padding-left: 1em;
+        text-indent: -1em;
+        &::before {
+            content: "※";
+        }
+    }
+}
+.reason-5 {
+    background-color: $lightBlue;
+    padding: 0 30px;
+    .reason-title {
+        margin: 0;
+    }
+    h4 {
+        font-size: 1rem;
+        padding-left: 24px;
+        margin-top: 40px;
+        border-left: 3px solid $deepBlue;
+        line-height: 1.4em;
+        sup {
+            font-weight: 300;
+            font-size: 0.65rem;
+        }
+    }
+    .first-img, .second-img {
+        @include imgDef;
+        margin-top: 24px;
+    }
+    .comment {
+        font-size: 0.65rem;
+        margin-top: 24px;
+        padding-left: 1em;
+        text-indent: -1em;
+        &::before {
+            content: "※";
+        }
+    }
+    .head-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        img {
+            display: block;
+            width: 50px;
+            height: auto;
+            margin-left: 50px;
+        }
+    }
+}
+
+// last-reason----------------------------------
+
+.last-reason{
+    .top-img {
+        @include imgDef;
+    }
+    .pie-chart-img {
+        @include imgDef;
+    }
+} 
+
+// form-bottom----------------------------------
+
+.form-bottom {
+    h4 {
+        bottom: -6%;
+        margin-top: -6%;
+    }
+    .title-img {
+        @include imgDef;
+        z-index: 2;
+    }
+}
+
+// footer-----------------------------------------
+
+footer {
+    .gray-back {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 16px;
+        background-color: #f6f6f6;
+        margin-top: 10px;
+        .norton-img {
+            @include imgDef;
+        }
+        .text {
+            line-height: 1.7em;
+            margin-left: 8px;
+        }
+    }
+    .blue-back {
+        background-color: #00aeef;
+        padding: 32px 0;
+        .inner-wrap {
+
+            .copy-img {
+                width: 188px;
+                display: block;
+                margin: auto;
+            }
+            .copy-text {
+                font-family: Droid Sans,"ヒラギノ角ゴ Pro",Hiragino Kaku Gothic Pro,"メイリオ",Meiryo,sans-serif;
+                color: #fff;
+                font-size: 0.6rem;
+                text-align: center;
+                margin-top: 20px;
+                letter-spacing: -0.04em;
+            }   
+        }
+    }
+}
+
+
+
