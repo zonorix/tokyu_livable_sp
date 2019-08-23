@@ -51,11 +51,12 @@ header {
 
 // form-top----------------------------------------------------------
 
-.step-img img {
+.step-img {
     @include imgDef;
+    margin-top: 5px;
 }
 form > .form-item:nth-child(2) {
-    margin: 0 18px;
+    margin: 6px 4% 0;
     border-radius: 4px;
 }
 .form-item {
@@ -63,14 +64,15 @@ form > .form-item:nth-child(2) {
     justify-content: space-between;
     align-items: center;
     background-color: #eee;
-    padding: 3px;
+    padding: 2px 3px 3px 0;
     .left {
-        padding-left: 2px;
+        margin-top: 3px;
+        width: 35%;
         .item-title {
-            font-size: 0.7rem;
-            font-weight: bold;
+            font-size: 0.75rem;
+            font-weight: 700;
             text-align: center;
-            width: 91px;
+            line-height: 1.4;
         }
     }
     
@@ -87,28 +89,35 @@ form > .form-item:nth-child(2) {
         select {
             background: #fff url(../images/index_ic05.png) no-repeat 94% 50%;
             background-size: 11px;
-            padding: 8px;
+            padding: 10.5px 10px 9px;
             width: 100%;
             border: 1px solid #bbb;
             border-radius: 4px;   
-            font-size: 0.9rem;         
+            font-size: 0.88rem;   
+            line-height: 1.1;      
         }   
     }
-    .right img {
-        display: block;
-        width: 30px;
-        margin: 0 4px 0 16px;
+    .right {
+        width: 23%;
+        text-align: right;
+        .ok-img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 30px;
+            margin-right: 6px;
         }
+    }
+
         
 }
 .step-2-wrap {
-    margin: 0 18px;
+    margin: 4px 4% 0;
     padding: 4px 0;
     background-color: #eee;
     border-radius: 4px;
 }
 .button-wrap {
-    margin: 0 18px;
+    margin: 0 4%;
 }
 .submit-button {
     background-color: #bbb;
@@ -131,7 +140,7 @@ form > .form-item:nth-child(2) {
         }
         p {
             color: #fff;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: bold;
         }
     }
@@ -144,7 +153,7 @@ form > .form-item:nth-child(2) {
 .intro h3 {
     font-size: 1.12rem;
     text-align: center;
-    margin-top: 24px;
+    margin-top: 32px;
     line-height: 1.9rem;
     font-weight: bold;
     letter-spacing: 0.05px;
@@ -157,77 +166,86 @@ form > .form-item:nth-child(2) {
 }
 .intro-img {
     @include imgDef;
-    margin-top: 20px;
+    margin-top: 26px;
 }
 .intro p:last-child {
     font-size: 1rem;
     font-weight: 700;
     text-align: center;
-    padding-bottom: 22.1%;
+    padding-bottom: 21.8%;
     background: url(../images/index_bg01.png) no-repeat 0 100%;
     background-size: contain;
+    margin-top: 2px;
 }
 
 // reason---------------------------------------
 
+// reason-title共通部分-----------------------------------
+
 .reason-title {
     border-bottom: 1px solid $deepBlue;
-    padding: 40px 0 20px;
-    margin: 0 23px;
+    padding: 7.3% 0 3.7%;
+    margin: 0 4%;
     display: flex;
     .num {
         color: $deepBlue;
-        font-size: 3.5rem;
+        font-size: 3.48rem;
         font-weight: normal;
         display: block;
         line-height: 1;
-        padding-left: 7px;
+        padding-left: 1.5%;
     }
     .title-text {
-        font-size: 0.9rem;
-        padding-left: 20px;
+        font-size: 0.88rem;
+        padding-left: 3.8%;
         em {
-            font-size: 1.4rem;
+            font-size: 1.378rem;
         }
     }
 }
 
+// end---------------------------------------------------------
 .reason-top {
     font-size: 1.25rem;
     color: #fff;
     text-align: center;
     background-color: $deepBlue;
-    padding: 0.9em;
+    padding: 24px;
 }
 .reason-1 {
+    padding-bottom: 4px;
     background-color: $lightBlue;
     .first-img {
         @include imgDef;
+        margin-top: 1px;
     }
     .lead {
-        margin: 0 30px;
-        font-size: 0.88rem;
-        margin-top: 4px;
+        margin: 5px 40px 0;
+        font-size: 0.875rem;
+        line-height: 1.6;
+        letter-spacing: 0.001em;
     }
     .second-img {
         @include imgDef;
+        margin-top: 0.5px;
     }
 }
 // reaaon h4 mixin--------------------------
 
 @mixin h4 {
-    font-size: 1.13rem;
+    font-size: 1.128rem;
     color: $deepBlue;
-    margin: 28px 30px 0;
+    margin: 4% 5.35% 0;
 }
 @mixin lead {
     font-size: .88rem;
-    margin: 10px 30px 0;
+    margin: 1.5% 5.35% 0;
 }
 
 // --------------------------------------------
 
 .reason-2 {
+    padding-bottom: 4px;
     h4 {
         @include h4;
     }
@@ -236,24 +254,48 @@ form > .form-item:nth-child(2) {
     }
     img {
         @include imgDef;
+        margin-top: 12px;
     }
 }
 .reason-3 {
     background-color: $lightBlue;
+    .reason-title {
+        position: relative;
+        .title-text {
+            width: calc(100% - 1.2em);
+            padding-right: 16%;
+        }
+        .title-right {
+            width: 7.8%;
+            height: auto;
+            position: absolute;
+            top: 61%;
+            right: 0;
+            min-width: 3.4rem;
+            transform: translate(0, -50%);
+            .title-right-img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+    }
     h4 {
         @include h4;
     }
     .lead {
         @include lead;
     }
-    img {
+    .main-img {
         @include imgDef;
+        margin-top: 12px;
     }
 }
 .reason-4 {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     h4 {
         @include h4;
+        line-height: 1.6em;
     }
     .lead {
         @include lead;
@@ -262,25 +304,25 @@ form > .form-item:nth-child(2) {
         @include imgDef;
     }
     .comment {
-        font-size: 0.65rem;
-        margin: 0 30px;
+        font-size: 0.626rem;
+        margin: 5px 40px 0;
+        line-height: 1.6em;
         padding-left: 1em;
         text-indent: -1em;
         &::before {
             content: "※";
         }
+        &:last-child {
+            margin-top: 0;
+        }
     }
 }
 .reason-5 {
     background-color: $lightBlue;
-    padding: 0 30px;
-    .reason-title {
-        margin: 0;
-    }
     h4 {
         font-size: 1rem;
-        padding-left: 24px;
-        margin-top: 40px;
+        padding-left: 4%;
+        margin: 9% 5.3% 0;
         border-left: 3px solid $deepBlue;
         line-height: 1.4em;
         sup {
@@ -290,11 +332,12 @@ form > .form-item:nth-child(2) {
     }
     .first-img, .second-img {
         @include imgDef;
-        margin-top: 24px;
+        margin-top: 4%;
+        padding: 0 5.3%;
     }
     .comment {
-        font-size: 0.65rem;
-        margin-top: 24px;
+        font-size: 0.626rem;
+        margin: 4.7% 5.3% 0;
         padding-left: 1em;
         text-indent: -1em;
         &::before {
@@ -302,14 +345,21 @@ form > .form-item:nth-child(2) {
         }
     }
     .head-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: flex-start;
+        position: relative;
+        padding-right: 5%;
+        h4 {
+            padding-right: 15%;
+        }
         img {
             display: block;
             width: 50px;
             height: auto;
-            margin-left: 50px;
+            position: absolute;
+            top: 0;
+            right: 5.3%;
         }
     }
 }
@@ -319,6 +369,7 @@ form > .form-item:nth-child(2) {
 .last-reason{
     .top-img {
         @include imgDef;
+        margin-top: 4px;
     }
     .pie-chart-img {
         @include imgDef;
@@ -345,7 +396,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 50px 16px;
+        padding: 6.2% 16px;
         background-color: #f6f6f6;
         margin-top: 10px;
         .norton-img {
@@ -358,7 +409,7 @@ footer {
     }
     .blue-back {
         background-color: #00aeef;
-        padding: 32px 0;
+        padding: 4.2% 0;
         .inner-wrap {
 
             .copy-img {
@@ -369,7 +420,7 @@ footer {
             .copy-text {
                 font-family: Droid Sans,"ヒラギノ角ゴ Pro",Hiragino Kaku Gothic Pro,"メイリオ",Meiryo,sans-serif;
                 color: #fff;
-                font-size: 0.6rem;
+                font-size: 0.59rem;
                 text-align: center;
                 margin-top: 20px;
                 letter-spacing: -0.04em;
