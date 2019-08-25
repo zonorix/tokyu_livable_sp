@@ -266,12 +266,12 @@ form > .form-item:nth-child(2) {
             padding-right: 16%;
         }
         .title-right {
-            width: 7.8%;
+            width: 15%;
             height: auto;
             position: absolute;
             top: 61%;
             right: 0;
-            min-width: 3.4rem;
+            max-width: 3.8rem;
             transform: translate(0, -50%);
             .title-right-img {
                 width: 100%;
@@ -429,5 +429,12 @@ footer {
     }
 }
 
+// media queries------------------------------------------------------
+
+@media screen and (min-width:320px) {
+    .reason-title .title-text {
+        white-space: nowrap;
+    }
+}
 
 
